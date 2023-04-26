@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -8039940744939327508}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,6 +137,9 @@ MonoBehaviour:
   Position:
     m_InternalValue: {x: 0, y: 0, z: 0}
   characterController: {fileID: 0}
+  inmortal:
+    m_InternalValue: 0
+  state: 0
   score: {fileID: 758544112425440074}
 --- !u!143 &4253961936204927429
 CharacterController:

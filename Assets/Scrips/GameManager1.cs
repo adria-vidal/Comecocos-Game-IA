@@ -5,6 +5,7 @@ using Unity.Netcode;
 
 public class GameManager1 : MonoBehaviour
 {
+    public static GameManager1 instance;
     public GameObject[] Ghosts;
     public float dificultad = 0.3f;
     int dX = 1, dZ = 1;
@@ -16,7 +17,10 @@ public class GameManager1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+         if (instance == null)
+         {
+            instance =  this;
+         }
     }
 
     // Update is called once per frame
